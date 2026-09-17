@@ -1,1 +1,94 @@
 
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0b0b0f;
+  color: white;
+}
+
+.app {
+  max-width: 700px;
+  margin: auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+.app > p {
+  text-align: center;
+  color: #aaa;
+  margin-bottom: 25px;
+}
+
+.box {
+  background: #18181f;
+  border: 1px solid #30303a;
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 16px;
+}
+
+h2 {
+  font-size: 19px;
+  margin-top: 0;
+}
+
+input[type="file"] {
+  width: 100%;
+  padding: 12px;
+  background: #25252d;
+  color: white;
+  border-radius: 10px;
+}
+
+input[type="range"] {
+  width: 100%;
+  margin: 12px 0 20px;
+}
+
+label {
+  display: block;
+  color: #ccc;
+  margin-top: 10px;
+}
+
+button {
+  border: none;
+  border-radius: 12px;
+  padding: 13px 16px;
+  margin: 5px 5px 5px 0;
+  background: white;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.4;
+}
+
+#downloadLink {
+  display: block;
+  background: white;
+  color: black;
+  padding: 14px;
+  border-radius: 12px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 12px;
+}
+
+#recordStatus,
+#exportStatus,
+#beatName {
+  color: #aaa;
+  }
