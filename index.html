@@ -1,1 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GMAX MUSIC STUDIO</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+
+  <div class="app">
+    <h1>🎵 GMAX MUSIC STUDIO</h1>
+    <p>Record • Add Beat • Mix • Export</p>
+
+    <div class="box">
+      <h2>🥁 Add Beat</h2>
+      <input type="file" id="beatFile" accept="audio/*">
+      <p id="beatName">No beat selected</p>
+    </div>
+
+    <div class="box">
+      <h2>🎤 Record Vocals</h2>
+
+      <button id="startRecord">🔴 Start Recording</button>
+      <button id="stopRecord" disabled>⏹ Stop Recording</button>
+
+      <p id="recordStatus">Ready</p>
+    </div>
+
+    <div class="box">
+      <h2>🎚️ Mix & Balance</h2>
+
+      <label>🥁 Beat Volume</label>
+      <input type="range" id="beatVolume" min="0" max="100" value="80">
+
+      <label>🎤 Vocal Volume</label>
+      <input type="range" id="vocalVolume" min="0" max="100" value="100">
+
+      <button id="playMix">▶️ Play Mix</button>
+      <button id="stopMix">⏹ Stop</button>
+    </div>
+
+    <div class="box">
+      <h2>📤 Export Song</h2>
+
+      <button id="exportSong">💾 Export Finished Song</button>
+
+      <p id="exportStatus"></p>
+      <a id="downloadLink" style="display:none;">
+        ⬇️ Download GMAX Song
+      </a>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+  </html>
