@@ -214,3 +214,8 @@ exportSong.addEventListener("click", async function () {
   }
 
   if (!vocal
+<button id="startRecording">🔴 Start Recording</button>
+
+<button id="stopRecording">⏹ Stop Recording</button>
+
+<p id="recordingStatus">Ready</p 
